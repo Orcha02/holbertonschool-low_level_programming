@@ -15,7 +15,7 @@ int main(void)
 		{
 			putchar(digit1);
 			putchar(digit2);
-			if(!(digit1 == '9' && digit2 == '9'))
+			if (!(digit1 == '9' && digit2 == '9'))
 			{
 				putchar(',');
 				putchar(' ');
