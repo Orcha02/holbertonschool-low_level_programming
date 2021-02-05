@@ -18,3 +18,4 @@ int main(void)
 	if (!(digit1 == '8'
 }
 return (0);
+	    }
