@@ -17,10 +17,10 @@ void times_table(void)
 			mult = row * col;
 			uni = mult % 10;
 			dec = mult / 10;
-			if (dec == 0)
-				_putchar(' ');
-			else
-				_putchar (dec + '0');
+			if (dec > 0)
+				_putchar(dec + '0');
+			else if (dec == 0 && col != 0)
+				_putchar (' ');
 			_putchar (uni + '0');
 			if (col < 9)
 			{
