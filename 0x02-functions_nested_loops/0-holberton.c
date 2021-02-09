@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	puts("Holberton");
+	puts("Holberton\n");
 	return (0);
 }
