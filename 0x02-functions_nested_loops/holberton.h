@@ -27,4 +27,10 @@ int print_last_digit(int);
 
 /*function that prints every minute of the day, starting from 00:00 to 23:59.*/
 void jack_bauer(void);
+
+/*function that prints the 9 times table, starting with 0.*/
+void times_table(void);
+
+/*function that adds two integers and returns the result.*/
+int add(int, int);
 #endif
