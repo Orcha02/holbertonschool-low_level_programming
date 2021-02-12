@@ -20,4 +20,6 @@ void print_line(int n);
 void print_diagonal(int n);
 /* prints a square, followed by a new line.*/
 void print_square(int size);
+/*function that prints a triangle, followed by a new line.*/
+void print_triangle(int size);
 #endif
