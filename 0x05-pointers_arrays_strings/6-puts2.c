@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * puts2 - function that prints every other character of a string
  * @str: String
@@ -18,4 +19,5 @@ void puts2(char *str)
 		_putchar(str[i]);
 	}
 	_putchar('\n');
+	printf("%d\n", i);
 }
