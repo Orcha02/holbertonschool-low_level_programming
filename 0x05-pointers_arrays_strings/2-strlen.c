@@ -18,10 +18,10 @@ int _strlen(char *s)
 	return (charCount);
 }
 
-/**(It can also be done with for:
-
-	for (charCount = 0; s[charCount] != '\0'; charCount++)
-	{}
-	return (charCount);
+/*
+ *(It can also be done with for:
+ *
+ *	for (charCount = 0; s[charCount] != '\0'; charCount++)
+ *	{}
+ *	return (charCount);
 */
-}
