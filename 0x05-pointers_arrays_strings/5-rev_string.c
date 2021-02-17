@@ -20,4 +20,7 @@ void rev_string(char *s)
 		s[b - 1 - a] = count;
 		a++;
 	}
+	for (a = 0; a < b; a++)
+	{
+	}
 }
