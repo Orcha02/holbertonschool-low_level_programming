@@ -1,61 +1,36 @@
 #include "holberton.h"
-/**
- * toUpper - prints a string, in reverse,
- *             followed by a new line
- * @string: pointer type char
- * Return: Always 0 (Success)
- */
-void toUpper(char *string)
-{
-	if (*string >= 'a' && *string <= 'z')
-		*string -= 32;
-}
-/**
- * toLower - prints a string, in reverse,
- *             followed by a new line
- * @string: pointer type char
- * Return: Always 0 (Success)
- */
-void toLower(char *string)
-{
-	if (*string >= 'A' && *string <= 'Z')
-		*string += 32;
-}
-/**
- * include - prints a string, in reverse,
- *             followed by a new line
- * @string: pointer type char
- * Return: Always 0 (Success)
- */
-int include(char *string)
-{
-	char *separators = " \t\n,;.!?\"(){}";
+#include <stdio.h>
 
-	for (; *separators != '\0'; separators++)
-		if (*separators == *string)
-			return (1);
-	return (0);
-}
 /**
- * cap_string - prints a string, in reverse,
- *             followed by a new line
- * @string: pointer type char
- * Return: Always 0 (Success)
+ * *cap_string - check the code for Holberton School students.
+ *
+ *@str: char
+ *
+ * Return: Always 0.
  */
-char *cap_string(char *string)
+char *cap_string(char *str)
 {
+	int i, j;
+	char sl[] = {' ', '\n', '\t', ',', ';', '.',
+		     '!', '?', '"', '(', ')', '}', '{', '}'};
 
-	char *head = string;
-
-	while (*string != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (string == head)
-			toUpper(string);
-		else if (include(string - 1))
-			toUpper(string);
-		else
-			toLower(string);
-		string++;
+		if (i == 0)
+		{
+			if ((str[i] >= 'a' && str[i] <= 'z'))
+				str[i] = str[i] - 32;
+		}
+		for (j = 0; sl[j] != '\0'; j++)
+		{
+			if (str[i] == sl[j])
+			{
+				i++;
+				if (str[i] >= 'a' && str[i] <= 'z')
+					str[i] = str[i] - 32;
+				i--;
+			}
+		}
 	}
-	return (head);
+	return (str);
 }
