@@ -17,7 +17,9 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				return (s + i); /* (s + i) -> ?*/
+				return (s + i);
+/* (s + i) move pointer to the position where I found the equals values*/
+/* Tambien puedo crear otro puntero y sacarlo asi *new = &s[i]*/
 			}
 		}
 	}
