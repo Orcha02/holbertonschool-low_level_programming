@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -24,7 +23,7 @@ int main(int argc, char *argv[])
 			printf("%s\n", "Error");
 			return (1);
 		}
-		else if (atoi(argv[i]) >= 0)
+		if (atoi(argv[i]) >= 0)
 		{
 			sum += atoi(argv[i]);
 		}
