@@ -5,7 +5,7 @@
  * main - program that multiplies two numbers.
  * @argc: number of command line
  * @argv: array containing the command line
- * @atoi: converts string into integer (needs <stdlib.h>)
+ *
  * Return: integer
  */
 int main(int argc, char *argv[])
