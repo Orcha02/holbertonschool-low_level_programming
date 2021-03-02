@@ -1,5 +1,8 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-int main(int argc, char *argv[]);
-int main(int argc, char **argv);
+
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 #endif
