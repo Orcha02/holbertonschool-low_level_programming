@@ -6,12 +6,12 @@
  * @nmemb:unsigned int
  * @size: unsigned int
  *
- * Return: void
+ * Return: pointer char
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *arr;
-	int c;
+	unsigned int c;
 
 	if (nmemb == 0 || size == 0)
 		return (0);
@@ -21,9 +21,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (arr != NULL)
 	{
 /*escribo las cadenas en el nuevo array*/
-		for (c = 0; arr[c] != '\0'; c++)
+		for (c = 0; c < nmemb * size; c++)
 		{
-			arr[c] = 0;
+			arr[c] = '\0';
 		}
 		return (arr);
 	}
