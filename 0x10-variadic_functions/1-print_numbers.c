@@ -12,11 +12,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int counter;
 	int num;
 
-	if (separator == NULL)
-	{
-		return;
-	}
-
 	va_start(my_list, n);/*Initialize argument list*/
 
 	for (counter = 0; counter < n; counter++)
