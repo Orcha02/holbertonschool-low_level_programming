@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		num = va_arg(my_list, int);/*gets argument value*/
 		printf("%d", num);
 
-		if (counter < n - 1)
+		if (counter < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
 		}
