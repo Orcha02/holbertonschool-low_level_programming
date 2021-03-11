@@ -2,20 +2,26 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - main entry
+ * main - entry point
  * @argc: argument count
- * @argv: argument
+ * @argv: argumemnts
  * Return: 0
  */
-int main(int argv, char *argc[])
-/*usamos argv y argc porq no nos deja acceder a la funcion directamente*/
+
+int main(int argc, char *argv[])
 {
+	int x, y, r;
+	int (*p_func)(int, int);
+
+
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);/*para indicar que es de error*/
+		exit(98);
 	}
+
 	/*recibo el codigo no string o dato CODIGO por ser puntero a una funcion*/
+
 	p_func = get_op_func(argv[2]);
 
 	if (p_func == NULL)
@@ -30,4 +36,5 @@ int main(int argv, char *argc[])
 
 	printf("%d\n", r);
 	return (0);
+
 }
