@@ -18,5 +18,17 @@ int (*get_op_func(char *s))(int, int)
 	  {"%", op_mod};
 	  {NULL, NULL}
 	};
-	int i;
+	int i = 0;
+
+	while (ops[i].op)
+	{
+/*Validamos que la primera posicion q recibimos en op sea igual en string*/ 
+/*Validamos que sea solo un caracter y asegurarnos que el siguiente sea nulo*/ 
+		if (ops[i].op[0] == s[0] == '\0')
+		{
+			return (ops[i].f)
+		}
+	i++;
+	}
+	return (NULL);
 }
