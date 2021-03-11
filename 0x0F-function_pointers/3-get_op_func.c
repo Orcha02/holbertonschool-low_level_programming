@@ -10,6 +10,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
+/*para seleccionar la operacion aritmetica que se va a realizar*/
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
