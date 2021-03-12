@@ -2,9 +2,10 @@
 #define _VARIADIC_FUNCTIONS_H
 /**
  * struct get_format - main entry
- * @p: pointer to char
+ * @p_type: pointer to char
  * @func: pointer to a function
- * Description: get function compare operator type and invoke the coorect function
+ * Description: get function compare operator type
+ * and invoke the coorect function
  */
 typedef struct get_format
 {
