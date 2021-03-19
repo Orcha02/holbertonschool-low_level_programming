@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * list_len - function that returns the number of elements in a linked list_t list.
+ * list_len - function that returns the number of elements
+ * in a linked list_t list.
  * @h: pointer to a structure typedef list_t
  * Return: number of elements in list_t.
  */
