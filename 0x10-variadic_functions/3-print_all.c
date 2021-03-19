@@ -64,13 +64,13 @@ void print_all(const char * const format, ...)
 	va_list a_list;
 	int inf = 0, c;
 	char *separator = "";
-	/*i= index of format*/
+	/*inf= index of format*/
 	va_start(a_list, format);/*initialize the argument  list*/
 
 	while (format != NULL && format[inf] != '\0')
 	{
 		c = 0;
-		while (c < 4)/*format is string "ceis"*/
+		while (c < 4)/*c,i,f,s*/
 		{
 			if (format[inf] == *(arr_format[c].p_type))
 			{
