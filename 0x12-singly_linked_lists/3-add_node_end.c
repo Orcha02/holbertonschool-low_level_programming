@@ -28,7 +28,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->next = NULL;
 /*Find current last node*/
 	if (*head == NULL)/*If list is empty, meaning there's nothing more than head*/
-	{		
+	{
 		*head = new_node;
 		return (new_node);
 	}
