@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  * free_list - function that frees a list_t list.
- * @h: pointer to a structure typedef list_t
+ * @head: pointer to a structure typedef list_t
  * Return: void
  */
 void free_list(list_t *head)
