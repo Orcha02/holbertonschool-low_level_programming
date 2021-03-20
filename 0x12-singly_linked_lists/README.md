@@ -6,4 +6,4 @@
 | 2-add_node.c | Function that adds a new node at the beginning of a singly linked list. |
 | 3-add_node_end.c | Function that adds a new node at the end of a singly linked list. |
 | 4-free_list.c | Function that frees a singly linked list. |
-| 100-first.c | function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed. |
+| 100-first.c | Function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed. |
