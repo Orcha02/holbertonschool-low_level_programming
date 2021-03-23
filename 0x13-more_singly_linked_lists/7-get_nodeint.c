@@ -18,7 +18,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		if (current_node == NULL)
 			return (NULL);
-		current_node = current_node->next;
+/*Assign next address of current_node to current_node*/
+		current_node = current_node->next;/*current_node = &next*/
 		counter++;
 	}
 	return (current_node);
