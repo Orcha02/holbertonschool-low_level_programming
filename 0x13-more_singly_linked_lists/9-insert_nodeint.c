@@ -23,7 +23,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 /*Assign value of n to member n of new_node*/
 	new_node->n = n;
-
+/*When new_node is in index 0*/
 	if (idx == 0)
 	{
 /*Assign head to new_node->next*/
