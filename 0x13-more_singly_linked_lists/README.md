@@ -12,3 +12,4 @@
 | 8-sum_listint.c | Function that returns the sum of all the data (n) of a listint_t linked list. |
 | 9-insert_nodeint.c | Function that inserts a new node at a given position. |
 | 10-delete_nodeint.c | Function that deletes the node at index index of a listint_t linked list. |
+| 100-reverse_listint.c | Function that reverses a listint_t linked list |
