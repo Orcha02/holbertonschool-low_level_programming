@@ -16,10 +16,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	current_node = *head;
 	if (current_node == NULL)/*if current_node doesnt exist*/
 		return (-1);
-/*If index is 0 I delete node 0*/ 
+/*If index is 0 I delete node 0*/
 	if (index == 0)
 	{
-		current_node = current_node->next; 
+		current_node = current_node->next;
 		free(*head);/*free 1st node*/
 		*head = current_node;/*Current_node is new head*/
 	}
@@ -29,14 +29,15 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		{
 			if (current_node == NULL)/*if fails end program*/
 				return (-1);
-/*current_node goes to the next node until it gets to one position before index*/
+/*current_node goes to next node until one position before index*/
 			current_node = current_node->next;
 		}
 /*Assign current_node to new_node*/
 		new_node = current_node;
 /*Save new_node that is after the one im deleting*/
 		new_node = new_node->next->next;
-/*I am 1 position before the index they want me to delete so I free (delete) the next node*/
+/*I am 1 position before the index they want me to delete*/
+/*So I free (delete) the next node*/
 		free(current_node->next);
 		current_node->next = new_node;
 		}
