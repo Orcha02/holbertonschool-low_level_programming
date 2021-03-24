@@ -39,9 +39,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 /*Assign next address of current_node to current_node*/
 		current_node = current_node->next;/*current_node = &next*/
+		counter++;
 	}
 /*Assign new_node address to current_node*/
-	new_node->next = new_node->next;
+	new_node->next = current_node->next;
 	current_node->next = new_node;
 	return (new_node);
 }
