@@ -12,6 +12,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 /*Validate if index is greater than size of bits*/
 	if (index > 64)
 		return (-1);
+	/*Create mask of 1*/
 /*Left shift mask the index times and set to 1 with | even if it is 0 or 1*/
 	mask = mask << index;
 	*n = (mask | *n);
