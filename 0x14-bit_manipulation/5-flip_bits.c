@@ -18,8 +18,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		if (n & 1)
 			counter++;
 /*With shift right I reduce n by 1*/
-/*I want to print only the 1's which are in counter
- *I remove the rest which are 0'*/ 
+/*I want to print only the 1's which are in counter*/
+/*I remove the rest which are 0's*/
 		n = n >> 1;
 	}
 	return (counter);
