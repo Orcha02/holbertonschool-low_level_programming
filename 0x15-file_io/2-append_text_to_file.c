@@ -14,7 +14,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 /*O_RDWR = read and write permissions*/
 /*O_APPEND = appends text*/
-/*0664 = -rw-rw-r-- (rw permission for owner and group)(read permission for other)*/
+/*0664 = -rw-rw-r-- (rw permission for owner & group)(read permission other)*/
 	fd = open(filename, O_RDWR | O_APPEND, 0664);
 /*if fails*/
 	if (fd == -1)
