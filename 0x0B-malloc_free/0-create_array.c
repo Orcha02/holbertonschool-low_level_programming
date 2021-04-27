@@ -1,35 +1,38 @@
-#include "holberton.h"
+#include <unistd.h>
+#include <stdlib.h>
+
 /**
- * create_array - creates an array of chars
- * initializes it with a specific char.
- *
- * @size: unsigned int
- * @c: char to print
- *
- * Return: char
+ * create_array - Main entry
+ * @c: The character to print
+ *@size: unsigned integer
+ * Return: char.
  */
 char *create_array(unsigned int size, char c)
 {
 	char *p;
-	unsigned int i;
+	unsigned int x;
 
-	p = malloc(size * sizeof(c));
-	if (p == NULL)
+	if (size == 0)
 	{
 		return (NULL);
-	}
-	if (size != 0)
-	{
-		for (i = 0; i < size; i++)
-		{
-		*(p + i) = c;/* p[i] = c*/
-		}
-		p[i] = '\0';
-		return (p);
 	}
 	else
 	{
-		return (NULL);
+		p = malloc(size * sizeof(c));
+
+		if (p != NULL)
+		{
+			for (x = 0; x < size; x++)
+			{
+				p[x] = c;
+				/*  *(p+x)=c     p[x]=c  */
+			}
+		}
+		else
+		{
+			return (NULL);
+		}
+
+		return (p);
 	}
-	free(p);
 }
