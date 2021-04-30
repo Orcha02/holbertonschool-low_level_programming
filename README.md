@@ -21,3 +21,4 @@
 | 0x13-more_singly_linked_lists | How to use linked lists |
 | 0x14-bit_manipulation | How to manipulate bits and use bitwise operators |
 | 0x15-file_io | File descriptors |
+| 0x17-doubly_linked_lists | What is a doubly linked list and how to use them |
