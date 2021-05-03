@@ -7,10 +7,7 @@
  */
 int add(int a, int b)
 {
-	int sum;
-
-	sum = a + b;
-	return (sum);
+	return (a + b);
 }
 
 /**
@@ -21,10 +18,7 @@ int add(int a, int b)
  */
 int sub(int a, int b)
 {
-	int resta;
-
-	resta = a - b;
-	return (resta);
+	return (a - b);
 }
 
 /**
@@ -35,10 +29,7 @@ int sub(int a, int b)
  */
 int mul(int a, int b)
 {
-	int mul;
-
-	mul = a * b;
-	return (mul);
+	return (a * b);
 }
 
 /**
@@ -49,10 +40,11 @@ int mul(int a, int b)
  */
 int div(int a, int b)
 {
-	int div;
-
-	div = a / b;
-	return (div);
+	if (b <= 0)
+	{
+		return (0);
+	}
+	return (a / b);
 }
 
 /**
@@ -63,8 +55,9 @@ int div(int a, int b)
  */
 int mod(int a, int b)
 {
-	int modul;
-
-	modul = a + b;
-	return (modul);
+	if (b <= 0)
+	{
+		return (a);
+	}
+	return (a % b);
 }
