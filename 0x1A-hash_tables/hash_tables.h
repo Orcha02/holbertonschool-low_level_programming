@@ -2,7 +2,8 @@
 #define _HASH_TABLES_H_
 
 #include <stdlib.h> /*malloc*/
-#include<string.h> /*strdup*/
+#include <string.h> /*strdup*/
+#include <stdio.h> /*printf*/
 /**
  * struct hash_node_s - Node of a hash table
  *
