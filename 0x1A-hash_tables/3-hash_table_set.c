@@ -15,24 +15,23 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
-	tmp = ht->array[index];/*Assign head to the hash table index*/
+	tmp = ht->array[index]; /*Assign head to the hash table index*/
 	index = key_index((unsigned char *)key, ht->size); /*Find index*/
 
 	while (tmp != NULL)
 	{
-		tmp = tmp->next;
-		if (strcmp(tmp->key, key) == 0)/*Compare to see if exists*/
+		if (strcmp(tmp->key, key) == 0) /*Compare to see if exists*/
 		{
 			free(tmp->value);
-			tmp->value = strdup(value);/*copy value*/
+			tmp->value = strdup(value); /*copy value*/
 			if (tmp->value == NULL)
-				return (0);/*0 if it not succeded*/
-			return (1);/*1 if it succeded*/
+				return (0); /*0 if it not succeded*/
+			return (1); /*1 if it succeded*/
 		}
+		tmp = tmp->next;
 	}
-/*allocate memory for new node*/
-	new_node = malloc(sizeof(hash_node_t));
-	if (new_node != NULL) /* if it is == NULL, will have seg fault*/
+	new_node = malloc(sizeof(hash_node_t)); /*allocate memory for new node*/
+	if (new_node != NULL) /*if it is == NULL, will have seg fault*/
 		return (0);
 
 	new_node->key = strdup(key);
