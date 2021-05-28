@@ -1,4 +1,4 @@
-| FILES  | DESCRIPTION |
+| FILE  | DESCRIPTION |
 | ------------- | ------------- |
 | [0x00-hello_world](https://github.com/Orcha02/holbertonschool-low_level_programming/tree/main/0x00-hello_world) | Shell scripts, Betty linter and C |
 | [0x01-variables_if_else_while](https://github.com/Orcha02/holbertonschool-low_level_programming/tree/main/0x01-variables_if_else_while) | Arithmetic Operators in C |
