@@ -4,6 +4,8 @@ OBJ = $(SRC:.c=.o)
 NAME = holberton
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+.PHONY: all clean oclean fclean re
+
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
@@ -14,3 +16,6 @@ oclean:
 fclean:clean oclean
 
 re: fclean all
+
+# .PHONY-> To tell they are not asociated with files named like that
+#          if there are any, so they SHOULD NEVER FAIL
