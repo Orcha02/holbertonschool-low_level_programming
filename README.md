@@ -23,3 +23,5 @@
 | [0x15-file_io](https://github.com/Orcha02/holbertonschool-low_level_programming/tree/main/0x15-file_io) | File descriptors |
 | [0x17-doubly_linked_lists](https://github.com/Orcha02/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists) | What is a doubly linked list and how to use them |
 | [0x18-dynamic_libraries](https://github.com/Orcha02/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries) | What is a dynamic library, how does it work, how to create one, and how to use it |
+| [0x1A-hash_tables](https://github.com/Orcha02/holbertonschool-low_level_programming/tree/main/0x1A-hash_tables) | Hash Table Data Structure |
+| [0x1C-makefiles](https://github.com/Orcha02/holbertonschool-low_level_programming/tree/main/0x1C-makefiles) | What are and how to use Makefiles |
