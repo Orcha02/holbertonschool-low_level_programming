@@ -7,3 +7,6 @@
 | 4-O | Time complexity (worst case) of a binary search in an array of size n |
 | 5-O | Space complexity (worst case) of a binary search in an array of size n |
 | 6-O | Space complexity of this function / algorithm |
+| 101-O | Time complexity (average case) of a jump search in an array of size n, using step = sqrt(n) |
+| 107-O | Time complexity (average case) of a jump search in a singly linked list of size n, using step = sqrt(n) |
+| 108-O | Time complexity (average case) of a jump search in a skip list of size n, with an express lane using step = sqrt(n) |
